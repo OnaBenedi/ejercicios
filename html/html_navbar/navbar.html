@@ -4,26 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/css/css_navbar/navbar.css">
   </head>
 
   <body>
     <nav>
       <h1>Navbar</h1>
 
-      <ul>
-        <li><b>Home</b></li>
-        <li><a href="#">Link</a></li>
-        <li>
-          <select name="" id="">
-            <option>Dropdown</option>
-          </select>
-        </li>
-        <li><button disabled>Disabled</button></li>
-      </ul>
+      <div>
+        <ul>
+          <li><b>Home</b></li>
+          <li><a href="#">Link</a></li>
+          <li>
+            <select name="" id="">
+              <option>Dropdown</option>
+            </select>
+          </li>
+          <li><button id="notworking" disabled>Disabled</button></li>
+        </ul>
+      </div>
 
       <form action="">
           <input type="search" placeholder="Search" />
-          <button>Search</button>
+          <button id="search">Search</button>
       </form>
     </nav>
   </body>
