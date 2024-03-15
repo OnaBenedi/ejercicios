@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+nav {
+  display: flex;
+  border-bottom: 1px solid white;
+  padding: 0 15px;
+  align-items: center;
+  background-color: rgb(37, 53, 65);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: flex-start;
+}
+h1 {
+  font-weight: 100;
+  padding: 1px 24px;
+}
+
+ul {
+  border: 1px;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  color: rgb(165, 162, 162);
+  text-decoration: none;
+}
+
+.dropdown-select {
+  max-width: 250px;
+  position: relative;
+}
+
+.dropdown-select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  height: 20 px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: rgb(165, 162, 162);
+  border: none;
+  border-radius: none;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+#notworking {
+  background-color: transparent;
+  border: 0;
+  color: gray;
+  height: 20 px;
+  width: auto;
+  padding: 2px 44px 0px 0px;
+  font-size: unset;
+}
+
+#search-area {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#search-button {
+  color: rgb(4, 128, 80);
+  border-color: rgb(4, 128, 80);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 7px;
+  border: 2px solid;
+}
