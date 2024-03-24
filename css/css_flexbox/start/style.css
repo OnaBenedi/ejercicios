@@ -10,9 +10,8 @@ aside {
   justify-content: space-between;
   background-color: lightblue;
 }
-h4{
-  font-family: 'Courier New', Courier, monospace
-  ;
+h4 {
+  font-family: "Courier New", Courier, monospace;
   padding: 20px;
 }
 ul {
