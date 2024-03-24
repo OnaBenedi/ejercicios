@@ -1,0 +1,21 @@
+.group{
+    border: 2px solid lightgray;
+    width: 300px;
+    height: 550px;
+    font-family: sans-serif;
+}
+header h2, p{
+    padding-left: 20px;
+}
+
+header img{
+    width: 300px;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: rgb(31, 67, 187);
+    margin: 20px;
+    padding: 5px;
+}
