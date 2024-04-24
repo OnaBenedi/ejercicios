@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage2</title>
+  </head>
+  <body>
+    <h1>Local Storage</h1>
+
+    <script>
+      const user = {
+        id: 1,
+        name: "John",
+        age: 25,
+      };
+      function saveUser(userobj){
+        const userobjString = JSON.stringify(userobj)
+        localStorage.setItem("user", userobjString)
+      }
+      saveUser(user)
+
+      function printUser(userobj){
+        const userItem = localStorage.getItem("user")
+        console.log(userItem);
+      }
+      printUser(user)
+    </script>
+  </body>
+</html>
