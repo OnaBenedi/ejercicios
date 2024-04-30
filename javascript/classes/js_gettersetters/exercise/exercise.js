@@ -12,6 +12,23 @@ class Person {
   set firstName (newFirstName){
     this._firstName = newFirstName;
   }
+
+  get lastName(){
+    return this._lastName
+  }
+
+  set lastName(newLastName){
+    this._lastName = newLastName
+  }
+
+  get fullName(){
+    return `${this._firstName} ${this.lastName}`
+  }
+
+  set fullName(newFullName){
+    this._fullName = newFullName;
+  }
+
 }
 
 const person = new Person('Mario', 'Rossi', 25);

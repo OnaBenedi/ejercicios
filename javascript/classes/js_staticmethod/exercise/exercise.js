@@ -6,7 +6,7 @@ class Person {
   }
 
   static fromObject(object){
-   
+    return new Person (object.firstName, object.lastName)
   }
 }
 
