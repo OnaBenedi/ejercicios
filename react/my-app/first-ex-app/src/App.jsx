@@ -1,8 +1,10 @@
 import AlertClock from "./components/events/AlertClock"
+import MouseClicker from "./components/handling-events/MouseClicker"
 import Hello from "./components/hello/Hello"
 import Welcome from "./components/props/Welcome"
 import Counter from "./components/state/Counter"
 import Clock from "./components/use-effect/Clock"
+
 function App() {
   
   function showTime (){
@@ -16,6 +18,8 @@ function App() {
     <AlertClock alertClockButtonHandler={showTime}/>
     <Counter/>
     <Clock/>
+    <MouseClicker/>
+   
     </div>
   )
 }
