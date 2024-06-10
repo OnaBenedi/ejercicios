@@ -1,8 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CounterDisplay from "./CounterDisplay";
 
 function Counter({ initialValue = 0, incrementBy = 1 }) {
   const [counter, setCounter] = useState(initialValue);
+
+  // const counterRef = useRef(0);
+  // useEffect(()=>{
+  //   if (counterRef.current + 1) {
+  //     console.log("up");
+  //   }
+  // }, [counter])
 
   function incrementCount() {
     setCounter((c) => c + incrementBy);
