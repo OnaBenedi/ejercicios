@@ -21,7 +21,7 @@ function Clock() {
     };
   }, []);
 
-  return <h2>The current hour is: {time.toLocaleTimeString()}; check console to see useRef used to control how many times this component has been mounted</h2>;
+  return <h2 className="clock">The current hour is: {time.toLocaleTimeString()}; check console to see useRef used to control how many times this component has been mounted</h2>;
 }
 
 export default Clock;
