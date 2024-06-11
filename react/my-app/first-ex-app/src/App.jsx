@@ -7,15 +7,12 @@ import Clock from "./components/use-effect/Clock"
 
 function App() {
   
-  function showTime (){
-    const currentTime = new Date().toLocaleTimeString()
-    alert(currentTime)
-  }
+  
   return (
     <div>
     <Hello/>
     <Welcome name = "Ona" age={24}/>
-    <AlertClock alertClockButtonHandler={showTime}/>
+    <AlertClock/>
     <Counter/>
     <Clock/>
     <MouseClicker/>
