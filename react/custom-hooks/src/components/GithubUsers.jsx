@@ -1,5 +1,6 @@
 import { useState } from "react";
 import GitHubUser from "./GithubUser.jsx";
+import { Outlet } from "react-router-dom";
 
 function GitHubUsers() {
   const [username, setUsername] = useState("");
@@ -27,7 +28,8 @@ function GitHubUsers() {
         <button>Submit</button>
       </form>
 
-      <ul>
+      
+        <ul>
         {userList.map((item, index) => {
           return (
             <li key={index}>
@@ -36,7 +38,11 @@ function GitHubUsers() {
           );
         })}
       </ul>
+   
+      <Outlet/>
     </div>
+
+
   );
 }
 
