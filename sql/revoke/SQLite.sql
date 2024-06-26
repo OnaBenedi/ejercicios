@@ -1,0 +1,1 @@
+GRANT VIEW, update on Books to 'martin'@'localhost' 
