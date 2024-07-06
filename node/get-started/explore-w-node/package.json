@@ -1,0 +1,16 @@
+{
+  "name": "explore-w-node",
+  "version": "1.0.0",
+  "main": "repl-exploring.js",
+  "scripts": {
+    "start": "npm repl-exploring.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
