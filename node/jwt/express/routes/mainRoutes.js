@@ -36,6 +36,8 @@ router.post("/planets/:id/image", upload.single("planet-img"), mainController.po
 
 router.post("/users/login", usersControllers.logIn)
 
+router.post("/users/signup", usersControllers.signUp)
+
 // app.post("/test", (req, res)=>{
 //     console.log(req);
 // })
