@@ -20,7 +20,7 @@ const usersControllers = {
                 username,
             }
             const secretKey = process.env.SECRET_KEY;
-            const token = jwt.sign(payload, secret)
+            const token = jwt.sign(payload, secretKey)
 
             console.log(token);
 
