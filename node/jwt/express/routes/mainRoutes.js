@@ -3,6 +3,8 @@ const router = express.Router();
 const mainController = require("../controllers/mainController.js")
 const usersControllers = require("../controllers/usersControllers.js")
 const multer = require("multer");
+const authorize = require("../authorize.js")
+const passport = require("../passport.js");
 //const upload = multer({dest: "assets/"})
 
 const storage = multer.diskStorage({
@@ -37,6 +39,8 @@ router.post("/planets/:id/image", upload.single("planet-img"), mainController.po
 router.post("/users/login", usersControllers.logIn)
 
 router.post("/users/signup", usersControllers.signUp)
+
+router.get("/users/logout", authorize, usersControllers.logOut)
 
 // app.post("/test", (req, res)=>{
 //     console.log(req);
