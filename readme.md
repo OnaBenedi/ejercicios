@@ -1,1 +1,1 @@
-Ejercicios de Develhope entregados - javascript
+Ejercicios de Develhope entregados
