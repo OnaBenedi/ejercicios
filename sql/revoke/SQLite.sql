@@ -1,0 +1,1 @@
+REVOKE update on Books to 'martin'@'localhost' 

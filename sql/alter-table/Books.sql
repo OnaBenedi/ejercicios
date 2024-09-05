@@ -1,0 +1,3 @@
+ALTER TABLE Books ADD COLUMN publisher VARCHARR(30);
+ALTER TABLE Books ADD COLUMN number_of_pages INTEGER;
+
